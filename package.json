@@ -1,0 +1,35 @@
+{
+  "name": "polyfill-lambda",
+  "version": "0.2.0",
+  "description": "Polyfills based on the user agent",
+  "main": "handler.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CultureHQ/polyfill-lambda.git"
+  },
+  "author": "Kevin Deisz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CultureHQ/polyfill-lambda/issues"
+  },
+  "homepage": "https://github.com/CultureHQ/polyfill-lambda#readme",
+  "dependencies": {
+    "polyfill-library": "^3.34.0"
+  },
+  "devDependencies": {
+    "@silvermine/serverless-plugin-cloudfront-lambda-edge": "2.1.1",
+    "express": "^4.17.1",
+    "jest": "^24.8.0",
+    "serverless-offline": "^5.3.3"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "./setupTests.js"
+    ],
+    "testRegex": "\\.test\\.js$"
+  }
+}
