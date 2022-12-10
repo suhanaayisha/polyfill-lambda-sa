@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "@silvermine/serverless-plugin-cloudfront-lambda-edge": "2.1.1",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "jest": "^24.8.0",
     "serverless-offline": "^5.3.3"
   },
